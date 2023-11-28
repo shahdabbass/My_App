@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button GO;//kjhkjhkjhhkhk
+    Button GO;//kjhkjhkjhhkhkdfgdkfg;lkdf
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
