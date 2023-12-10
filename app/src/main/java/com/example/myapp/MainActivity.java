@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button GO;//kjhkjhkjhhkhkdfgdkfg;lkdf
+    Button GO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
             public void run()
             {
                 //to open new activity from current to next
-                Intent i= new Intent(MainActivity.this, MainActivity2.class);
+                Intent i= new Intent(MainActivity.this, inform.class);
                 startActivity(i);
-                //to close current activity
+              //  to close current activity
                 finish();
             }
         };
