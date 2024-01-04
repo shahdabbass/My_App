@@ -19,12 +19,12 @@ public interface ProductDao {
     Product getInfoByInfoId(long InfoId);
 
     @Insert
-    long insert(User I);
+    long insert(Product I);
 
     @Update
-    void update(User info);
+    void update(Product info);
 
     @Delete
-    void delete(User info);
+    void delete(Product info);
 
 }

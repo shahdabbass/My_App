@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="460dp"
+        android:layout_height="73dp"
+        android:fontFamily="serif"
+        android:text="- Please write the product details -"
+        android:textColor="#9D5D35"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="155dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etIdP"
+        android:layout_width="272dp"
+        android:layout_height="52dp"
+        android:hint="ID"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="274dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etNameP"
+        android:layout_width="272dp"
+        android:layout_height="73dp"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="331dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etMaterial"
+        android:layout_width="272dp"
+        android:layout_height="67dp"
+        android:hint="Material"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <Button
+        android:id="@+id/psave"
+        android:layout_width="411dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#D6C4B0"
+        android:text="save"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="374dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etRecT"
+        android:layout_width="278dp"
+        android:layout_height="54dp"
+        android:hint="Recycle Type"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="338dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

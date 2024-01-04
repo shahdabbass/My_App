@@ -5,24 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
 
     Button GO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash_screen);
         Handler h=new Handler();
         Runnable r=new Runnable() {
             @Override
             public void run()
             {
                 //to open new activity from current to next
-                Intent i= new Intent(MainActivity.this, inform.class);
+                Intent i= new Intent(SplashScreenActivity.this, infoActivity.class);
                 startActivity(i);
               //  to close current activity
                 finish();

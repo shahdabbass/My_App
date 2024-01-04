@@ -12,21 +12,31 @@ public class User {
         @ColumnInfo(name = "Id")
         public long Id;
 
+        public String email;
+
         @ColumnInfo(name = "name")
         private String name;
 
         @ColumnInfo(name = "residence")
-        private String residence;
+        private String password;
 
-        @ColumnInfo(name = "gender")
-        private String gender;
+        @ColumnInfo(name = "phone")
+        private String phone;
 
 
         // Constructors, getters, and setters
 
         public User() {}
 
-        public long getId() {
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public long getId() {
             return Id;
         }
 
@@ -42,20 +52,20 @@ public class User {
             this.name = name;
         }
 
-        public String getResidence() {
-            return residence;
+        public String getPassword() {
+            return password;
         }
 
-        public void setResidence(String residence) {
-            this.residence = residence;
+        public void setPassword(String password) {
+            this.password = password;
         }
 
-        public String getGender() {
-            return gender;
+        public String getPhone() {
+            return phone;
         }
 
-        public void setGender(String gender) {
-            this.gender = gender;
+        public void setPhone(String phone) {
+            this.phone = phone;
         }
 
     @Override
@@ -63,8 +73,8 @@ public class User {
         return "User{" +
                 "Id=" + Id +
                 ", name='" + name + '\'' +
-                ", residence='" + residence + '\'' +
-                ", gender='" + gender + '\'' +
+                ", residence='" + password + '\'' +
+                ", gender='" + phone + '\'' +
                 '}';
     }
 }

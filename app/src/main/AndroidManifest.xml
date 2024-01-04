@@ -13,22 +13,31 @@
         android:theme="@style/Theme.MyApp"
         tools:targetApi="31">
         <activity
+            android:name=".ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddTaskActivity5"
             android:exported="false" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".ListvActivity"
             android:exported="false" />
         <activity
-            android:name=".inform"
+            android:name=".infoActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".AddProductActivity"
             android:exported="false" />
         <activity
-            android:name=".UserActivity"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

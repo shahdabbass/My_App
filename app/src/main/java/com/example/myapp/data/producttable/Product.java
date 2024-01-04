@@ -1,6 +1,5 @@
 package com.example.myapp.data.producttable;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -8,9 +7,10 @@ import androidx.room.PrimaryKey;
 public class Product {
 
     @PrimaryKey(autoGenerate = true)
-    public long pId;
-    private String pName;
-    private String pMaterial;
+    public long etIdP;
+    private String etNameP;
+    private String etMaterial;
+    private String etReT;
 
 
 
@@ -18,40 +18,50 @@ public class Product {
 
     //pid
     public long getPId() {
-        return pId;
+        return etIdP;
     }
 
-    public void setPId(long pId) {
-        this.pId = pId;
+    public void setetIdP(long pId) {
+        this.etIdP = pId;
     }
 
     // pname
     public String getPName() {
-        return pName;
+        return etNameP;
     }
 
-    public void setPName(String pName) {
-        this.pName = pName;
+    public void setetNameP(String pName) {
+        this.etNameP = pName;
     }
 
     //pm
 
 
     public String getPMaterial() {
-        return pMaterial;
+        return etMaterial;
     }
 
-    public void setPMaterial(String pMaterial) {
-        this.pMaterial = pMaterial;
+    public void setetMaterial(String pMaterial) {
+        this.etMaterial = pMaterial;
     }
 
+    //pR
+
+
+    public String getEtReT() {
+        return etReT;
+    }
+
+    public void setEtReT(String etReT) {
+        this.etReT = etReT;
+    }
 
     @Override
     public String toString() {
         return "Product{" +
-                "pId=" + pId +
-                ", pName='" + pName + '\'' +
-                ", pMaterial='" + pMaterial + '\'' +
+                "pId=" + etIdP +
+                ", pName='" + etNameP + '\'' +
+                ", pMaterial='" + etMaterial + '\'' +
                 '}';
     }
 }

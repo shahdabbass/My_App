@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class inform extends AppCompatActivity {
+public class infoActivity extends AppCompatActivity {
 
     Button GO;
     @Override
@@ -18,7 +18,7 @@ public class inform extends AppCompatActivity {
         GO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(getApplicationContext(), UserActivity.class);
+                Intent i=new Intent(getApplicationContext(), SignInActivity.class);
                 startActivity(i);
             }
         });
