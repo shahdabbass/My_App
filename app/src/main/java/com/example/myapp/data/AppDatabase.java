@@ -11,7 +11,7 @@ import com.example.myapp.data.producttable.ProductDao;
 import com.example.myapp.data.usertable.User;
 import com.example.myapp.data.usertable.UserDao;
 
-@Database(entities = {User.class, Product.class}, version = 2, exportSchema = false)
+@Database(entities = {User.class, Product.class}, version = 3, exportSchema = false)
 
 
 public abstract class AppDatabase extends RoomDatabase {

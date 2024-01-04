@@ -29,20 +29,21 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
         signIn= findViewById(R.id.btnSignIn);
         signUp= findViewById(R.id.btnSignUp);
-        tEmail=findViewById(R.id.etEmail);
-        tPass =findViewById(R.id.etPassword);
+        tEmail=findViewById(R.id.tEmail);
+        tPass =findViewById(R.id.tPassword);
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                checkEmailPass();
+                checkAndSignIn();
             }
         });
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                checkEmailPass();
+                Intent i=new Intent(SignInActivity.this,SignUpActivity.class);
+                startActivity(i);
             }
         });
 
@@ -52,7 +53,7 @@ public class SignInActivity extends AppCompatActivity {
 
 
 
-    private void checkEmailPass()
+    private void checkAndSignIn()
 {
        //يحوي نتيجه فحص الحقول ان كانت سليمه
         boolean isAllOK=true;
@@ -81,14 +82,14 @@ public class SignInActivity extends AppCompatActivity {
             //مؤشر لكائن عمليات الجدول
             UserDao userDao=db.getUserDao();
             //ان لم يكن موجود null استدعاء العمليه التي تنفذ الاستعلام الذي يفحص البريد و كلمه المرور و يعيد كائنا ان كان موجود
-            User myUser= userDao.checkEmailPass(email,password);
+            User myUser= userDao.checkEmailAndPassw(email,password);
             //هل لا يوجد كائن حسب الايميل و الباسورد
             if(myUser==null)
                 Toast.makeText(this, "Wrong Email Or Password",Toast.LENGTH_LONG).show();
              else
             {
                 //ان كان هناك حساب جسب الايميل و الباسورد ننتقل الى الشاشه الرئيسيه
-                Intent i=new Intent(SignInActivity.this, AddProductActivity.class);
+                Intent i=new Intent(SignInActivity.this, SearchProductActivity.class);
                 startActivity(i);
                 finish();
             }

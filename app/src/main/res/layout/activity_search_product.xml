@@ -10,58 +10,46 @@
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
         android:text="Search Product"
         android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="38dp" />
 
     <EditText
         android:id="@+id/etBC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="111dp"
-        android:layout_marginBottom="113dp"
         android:ems="10"
         android:hint="EnterProduct Brcode"
         android:inputType="text"
         android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/btS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv" />
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="108dp" />
 
     <Button
-        android:id="@+id/btS"
+        android:id="@+id/btnGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="19dp"
-        android:text="Search"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginBottom="290dp"
         android:text="go to list"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="394dp" />
 
     <Button
         android:id="@+id/btnScan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="9dp"
-        android:text="Scan"
-        app:layout_constraintBottom_toTopOf="@+id/btS"
-        app:layout_constraintStart_toStartOf="@+id/etBC"
-        app:layout_constraintTop_toBottomOf="@+id/etBC" />
+        android:text="scan"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="108dp"
+        android:layout_height="52dp"
+        android:text="search"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="332dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

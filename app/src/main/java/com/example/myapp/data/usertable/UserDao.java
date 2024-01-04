@@ -15,8 +15,8 @@ public interface UserDao {
     List<User> getAll();
     @Query("SELECT * FROM User WHERE id IN (:userIds)")
      List<User> loadAllByIds(int[] userIds);
-    @Query("SELECT * FROM User WHERE email = :myEmail AND passw =:myPassw LIMIT 1  ")
-    User checkEmail(String myEmail, String myPassw);
+    @Query("SELECT * FROM User WHERE email = :myEmail AND password =:myPassw LIMIT 1  ")
+    User checkEmailAndPassw(String myEmail, String myPassw);
    // @Query("SELECT * FROM User where Id == (:InfoId)")
   //  User getInfoByInfoId(long InfoId);
 
@@ -29,6 +29,6 @@ public interface UserDao {
     @Delete
     void delete(User info);
 
-
-    User checkEmailPass(String email, String password);
+    @Query("SELECT * FROM User WHERE email = :myEmail  LIMIT 1  ")
+    User checkEmail(String myEmail);
 }

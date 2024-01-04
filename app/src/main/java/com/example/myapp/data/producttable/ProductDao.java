@@ -13,9 +13,9 @@ import java.util.List;
 @Dao
 
 public interface ProductDao {
-    @Query("SELECT * FROM User")
+    @Query("SELECT * FROM Product")
     List<Product> getAll();
-    @Query("SELECT * FROM User where Id == (:InfoId)")
+    @Query("SELECT * FROM Product where IdP == (:InfoId)")
     Product getInfoByInfoId(long InfoId);
 
     @Insert

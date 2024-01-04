@@ -7,61 +7,51 @@ import androidx.room.PrimaryKey;
 public class Product {
 
     @PrimaryKey(autoGenerate = true)
-    public long etIdP;
-    private String etNameP;
-    private String etMaterial;
-    private String etReT;
+    public long IdP;
+    private String NameP;
+    private String Material;
+    private String ReT;
 
 
-
-    //get/set
-
-    //pid
-    public long getPId() {
-        return etIdP;
+    public long getIdP() {
+        return IdP;
     }
 
-    public void setetIdP(long pId) {
-        this.etIdP = pId;
+    public void setIdP(long idP) {
+        IdP = idP;
     }
 
-    // pname
-    public String getPName() {
-        return etNameP;
+    public String getNameP() {
+        return NameP;
     }
 
-    public void setetNameP(String pName) {
-        this.etNameP = pName;
+    public void setNameP(String nameP) {
+        NameP = nameP;
     }
 
-    //pm
-
-
-    public String getPMaterial() {
-        return etMaterial;
+    public String getMaterial() {
+        return Material;
     }
 
-    public void setetMaterial(String pMaterial) {
-        this.etMaterial = pMaterial;
+    public void setMaterial(String material) {
+        Material = material;
     }
 
-    //pR
-
-
-    public String getEtReT() {
-        return etReT;
+    public String getReT() {
+        return ReT;
     }
 
-    public void setEtReT(String etReT) {
-        this.etReT = etReT;
+    public void setReT(String reT) {
+        this.ReT = reT;
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "pId=" + etIdP +
-                ", pName='" + etNameP + '\'' +
-                ", pMaterial='" + etMaterial + '\'' +
+                "IdP=" + IdP +
+                ", NameP='" + NameP + '\'' +
+                ", Material='" + Material + '\'' +
+                ", etReT='" + ReT + '\'' +
                 '}';
     }
 }

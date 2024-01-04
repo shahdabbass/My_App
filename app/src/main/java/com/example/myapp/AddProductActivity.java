@@ -59,10 +59,10 @@ public class AddProductActivity extends AppCompatActivity {
         if (isAllOk) {
             Product I = new Product();
             int id = Integer.parseInt(txtId);
-            I.setetIdP(id);
-            I.setetNameP(name);
-            I.setetMaterial(tMat.getText().toString());
-            I.setEtReT(tR.getText().toString());
+            I.setIdP(id);
+            I.setNameP(name);
+            I.setMaterial(tMat.getText().toString());
+            I.setReT(tR.getText().toString());
             database.getProductDao().insert(I);
         }
 

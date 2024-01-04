@@ -17,7 +17,6 @@ public class User {
         @ColumnInfo(name = "name")
         private String name;
 
-        @ColumnInfo(name = "residence")
         private String password;
 
         @ColumnInfo(name = "phone")
