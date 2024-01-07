@@ -29,6 +29,6 @@ public interface ProductDao {
     @Delete
     void delete(Product info);
     @Query("SELECT * FROM Product WHERE BrcodP = :myBrcode  LIMIT 1  ")
-    User checkBrcode(String myBrcode);
+    Product checkBrcode(String myBrcode);
 
 }

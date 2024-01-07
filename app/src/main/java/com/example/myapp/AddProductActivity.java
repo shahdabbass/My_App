@@ -3,6 +3,7 @@ package com.example.myapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import com.example.myapp.data.AppDatabase;
@@ -30,6 +31,13 @@ public class AddProductActivity extends AppCompatActivity {
         tR =findViewById(R.id.etRecT);
        database=AppDatabase.getAppDatabase(getApplicationContext());
 
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                validateAndSaveProduct();
+            }
+        });
 
     }
 

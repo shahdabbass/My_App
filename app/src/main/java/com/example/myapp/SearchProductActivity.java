@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -26,6 +27,13 @@ public class SearchProductActivity extends AppCompatActivity {
         search = findViewById(R.id.btnSearch);
         goToList = findViewById(R.id.btnGo);
         etBrcode =findViewById(R.id.tbrcode);
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                validateAndSearchBarcode();
+            }
+        });
 
     }
 
