@@ -3,14 +3,17 @@ package com.example.myapp.data.producttable;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
-public class Product {
+import java.io.Serializable;
+
+@Entity                //لنتمكن من نقب الكائن بواسطة انتنت
+public class Product implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     public long IdP;
     private String NameP;
     private String Material;
     private String ReT;
+    private String BrcodP;
 
 
     public long getIdP() {
@@ -45,13 +48,22 @@ public class Product {
         this.ReT = reT;
     }
 
+    public String getBrcodP() {
+        return BrcodP;
+    }
+
+    public void setBrcodP(String brcodP) {
+        BrcodP = brcodP;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
                 "IdP=" + IdP +
                 ", NameP='" + NameP + '\'' +
                 ", Material='" + Material + '\'' +
-                ", etReT='" + ReT + '\'' +
+                ", ReT='" + ReT + '\'' +
+                ", BrcodP='" + BrcodP + '\'' +
                 '}';
     }
 }

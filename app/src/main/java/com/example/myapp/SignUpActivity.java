@@ -82,7 +82,7 @@ public class SignUpActivity extends AppCompatActivity {
 //                }
         if (isAllOk) {
             Toast.makeText(this, "All OK", Toast.LENGTH_SHORT).show();
-            UserDao userDao = databbase.getUserDao();
+            UserDao userDao = databbase.getUserDao();//hf
             if(userDao.checkEmail(email)==null) {
 
 

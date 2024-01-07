@@ -27,7 +27,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etIdP"
+        android:id="@+id/pbrcode"
         android:layout_width="272dp"
         android:layout_height="52dp"
         android:hint="ID"

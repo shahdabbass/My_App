@@ -15,17 +15,6 @@
         tools:layout_editor_absoluteX="86dp"
         tools:layout_editor_absoluteY="38dp" />
 
-    <EditText
-        android:id="@+id/etBC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="EnterProduct Brcode"
-        android:inputType="text"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="108dp" />
-
     <Button
         android:id="@+id/btnGo"
         android:layout_width="wrap_content"
@@ -40,16 +29,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="scan"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="182dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="218dp" />
 
     <Button
         android:id="@+id/btnSearch"
-        android:layout_width="108dp"
+        android:layout_width="154dp"
         android:layout_height="52dp"
         android:text="search"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="332dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="130dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tbrcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EnterProduct Brcode" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

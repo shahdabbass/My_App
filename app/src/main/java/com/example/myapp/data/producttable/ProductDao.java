@@ -17,6 +17,8 @@ public interface ProductDao {
     List<Product> getAll();
     @Query("SELECT * FROM Product where IdP == (:InfoId)")
     Product getInfoByInfoId(long InfoId);
+    @Query("SELECT * FROM Product WHERE BrcodP = :myBrcode  LIMIT 1  ")
+    Product searchAndCheckBrcode(String myBrcode);
 
     @Insert
     long insert(Product I);
@@ -26,5 +28,7 @@ public interface ProductDao {
 
     @Delete
     void delete(Product info);
+    @Query("SELECT * FROM Product WHERE BrcodP = :myBrcode  LIMIT 1  ")
+    User checkBrcode(String myBrcode);
 
 }
