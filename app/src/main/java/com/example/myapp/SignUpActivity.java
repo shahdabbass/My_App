@@ -35,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
         tpass = findViewById(R.id.tPassword);
         temail = findViewById(R.id.tEmail);
         tph = findViewById(R.id.tPhone);
-
+        databbase=AppDatabase.getAppDatabase(this);
         bts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

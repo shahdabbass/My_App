@@ -11,7 +11,7 @@ import com.example.myapp.data.producttable.ProductDao;
 import com.example.myapp.data.usertable.User;
 import com.example.myapp.data.usertable.UserDao;
 
-@Database(entities = {User.class, Product.class}, version = 3, exportSchema = false)
+@Database(entities = {User.class, Product.class}, version =1, exportSchema = false)
 
 
 public abstract class AppDatabase extends RoomDatabase {
@@ -23,7 +23,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public static AppDatabase getAppDatabase(Context context) {
         if (INSTANCE == null) {
             INSTANCE =
-                    Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "DataBaseApp")
+                    Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "productDB")
                             .allowMainThreadQueries()
                             .build();
         }

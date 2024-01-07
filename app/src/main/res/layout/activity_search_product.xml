@@ -10,42 +10,61 @@
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="45dp"
         android:text="Search Product"
         android:textSize="35dp"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="38dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginBottom="284dp"
         android:text="go to list"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="394dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
 
     <Button
         android:id="@+id/btnScan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="66dp"
         android:text="scan"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="154dp"
-        android:layout_height="52dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
         android:text="search"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnGo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScan" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="130dp">
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnScan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tbrcode"

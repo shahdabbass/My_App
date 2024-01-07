@@ -22,7 +22,7 @@
             android:name=".SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".AddTaskActivity5"
+            android:name=".AddProductActivity"
             android:exported="false" />
         <activity
             android:name=".ListvActivity"
@@ -30,9 +30,7 @@
         <activity
             android:name=".infoActivity"
             android:exported="false" />
-        <activity
-            android:name=".AddProductActivity"
-            android:exported="false" />
+
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
